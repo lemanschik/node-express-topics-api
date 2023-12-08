@@ -12,7 +12,7 @@ const router = {
   caller(req,res) => {
     // expects getting called via get with some additinal optinal headers
     // returns html including callerjs
-    // sets 
+    // sets the entry point for long term cross site interactions if desired like with 3th party cookies before.
   },
   topics(req,res) => {
     // gets called with request and topic responses returns classified content.
