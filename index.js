@@ -13,9 +13,15 @@ const router = {
     // expects getting called via get with some additinal optinal headers
     // returns html including callerjs
     // sets the entry point for long term cross site interactions if desired like with 3th party cookies before.
+
+    // generate UUID
+    // assign returned topics to UUID
+    // publish UUID to window.postMessage(UUID)
   },
   topics(req,res) => {
-    // gets called with request and topic responses returns classified content.
+    // gets called with request and topic responses returns classified content. nneds to get called with origin to link the caller data
+    // we get the data via indipendent urls from maybe even indipendent instances.
+    // Topics gets called with the returned UUID from caller.
   }
 }
 
